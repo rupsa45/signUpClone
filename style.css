@@ -1,69 +1,106 @@
-*{
-    margin: 0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background-image: url(backgound.jpg);
+/* body {
+  background-image: url(backgound.jpg);
+} */
+.mainDiv {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
 }
-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin-top: 50px;
-    text-align: center;
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  /* margin-top: 50px; */
+  text-align: center;
+  width: 50%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 5rem 0;
 }
-input{
-    display: block;
-    width: 350px;
-    height: 40px;
-    margin: 20px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-bottom: 1px solid black;
-    background: transparent;
+.TextInput {
+  display: block;
+  /* width: 350px; */
+  width: 100%;
+  /* height: 40px;
+  margin: 20px; */
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  background: transparent;
 }
-button{
-    width: 130px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #42a5f5;
-    /* background-color: #04AA6D; */
-    color: white;
-    margin: 20px;
-    opacity: 0.9;
-    cursor: pointer;
+button {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #42a5f5;
+  /* background-color: #04AA6D; */
+  color: white;
+  margin: 20px;
+  opacity: 0.9;
+  cursor: pointer;
 }
 button:hover {
-    opacity:2;
-  }
-  
-form h1{
-    margin-bottom: 30px;
+  opacity: 2;
+}
+
+form h1 {
+  margin-bottom: 30px;
 }
 .cancelbtn {
-    padding: 5px 5px;
-    background-color: #f44336;
-  }
-  /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-    float: left;
-    width: 40%;
+  padding: 5px 5px;
+  background-color: #f44336;
 }
-::placeholder{
-    color:black;
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  padding: 0.5rem 0.8rem;
+}
+::placeholder {
+  color: black;
 }
 /* input[type="checkbox"] {
     display: inline-block;
     width: auto;
   } */
-.left{
-    /* height:20px ;
-    width: 20px; ; */
+/* .left {
+  height:20px ;
+    width: 20px; ;
+} */
+.checkInput {
+  text-align: left;
+  padding-top: 1rem;
+  align-self: baseline;
+}
+.sideImg {
+  max-width: 600px;
+  min-height: 600px;
+}
+.sideImgDiv {
+  width: 50%;
+  display: grid;
+  place-content: center;
+}
+.firstTwoBtns {
+  display: flex;
+  justify-content: space-around;
+}
+.nextTwoBtns {
+  width: 100%;
+}
+.signup-btn {
+  width: 100%;
+  margin: 0.5rem 0 !important;
 }
